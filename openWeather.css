@@ -1,0 +1,27 @@
+table {
+	border: thin solid black;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th {
+	border: thin solid black;
+	text-align: center;
+	width:125px;
+}
+
+td {
+	border: thin solid black;
+	text-align: center;
+	width: 125px;
+	height: 20px;
+}
+
+div {
+	text-align: center;
+}
+
+#weatherDiv {
+	border: thin solid black;
+}

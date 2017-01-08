@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Open Weather</title>
+  <link rel="stylesheet" type="text/css" href="openWeather.css">
+ </head>
+ <body>
+	<div>
+		<h2> Enter the location for which you want weather data: </h2>			
+			<fieldset id="zipCode">
+				<legend>Search for location by zip code</legend>
+				<label for="zipCode">Zip Code:</label>
+				<input type="text" name="zipCode" id="zipInput">
+				<input type="submit" id="zipSubmit">
+			</fieldset>
+			<p>Or</p>
+			<fieldset id="cityState">
+				<legend>Search for location by City and State</legend>
+				<label for="city">City:</label>
+				<input type="text" name="city" id="cityInput">
+				<label for="state">State:</label>
+				<input type="text" name="state" id="stateInput">				
+				<input type="submit" id="cityStateSubmit">
+			</fieldset>
+	</div>
+	<p></p>
+	<div id="weatherDiv">
+	<h2>Weather:</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>City</th>
+				<th>Temp</th>
+				<th>Humidity</th>
+			</tr>
+		</thead>
+		<tbody id = "currentWeather">
+			<tr>
+				<td id="cityText"></td>
+				<td id="tempText"></td>
+				<td id="humidityText"></td>
+		</tbody>
+	</table>
+	<p></p>
+	</div>
+	<p></p>
+	<div>
+		<fieldset>
+			<legend>Form that submits to http://httpbin.org/post</legend>
+			<input type="text" id="postInput" placeholder="Random text here">
+			<input type="submit" id="postSubmit">
+		</fieldset>
+		<h4>Text that you sent:</h4>
+		<textarea id="httbinReturn"></textarea>
+		
+	</div>
+	
+	<script type="text/javascript" src="openWeather.js"></script>
+ </body>
+</html>
